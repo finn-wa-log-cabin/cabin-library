@@ -1,2 +1,3 @@
-# log-cabin-data-common
-Common Python code for log-cabin-data projects
+# cabin
+
+A library containing common Python code for log-cabin-data projects.
