@@ -1,13 +1,14 @@
 [tool.poetry]
 name = "cabin"
-version = "0.1.1"
+version = "0.2.0"
 description = "Common code for log-cabin-data projects"
 authors = ["Finn Welsford-Ackroyd <finnwa24@gmail.com>"]
-license = "AGPL-3.0"
+license = "AGPL-3.0-or-later"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-marshmallow-dataclass = "^8.4.1"
+marshmallow-dataclass = { extras = ["enum"], version = "^8.4.1" }
 marshmallow = "^3.11.1"
 pandas = "^1.2.4"
 python-dateutil = "^2.8.1"

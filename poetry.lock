@@ -120,6 +120,7 @@ python-versions = ">=3.6"
 
 [package.dependencies]
 marshmallow = ">=3.0.0,<4.0"
+marshmallow-enum = {version = "*", optional = true, markers = "extra == \"enum\""}
 typing-inspect = "*"
 
 [package.extras]
@@ -129,6 +130,17 @@ enum = ["marshmallow-enum"]
 lint = ["pre-commit (>=1.18,<2.0)"]
 tests = ["pytest (>=5.4)", "pytest-mypy-plugins (>=1.2.0)", "typing-extensions (>=3.7.2,<3.8.0)"]
 union = ["typeguard"]
+
+[[package]]
+name = "marshmallow-enum"
+version = "1.5.1"
+description = "Enum field for Marshmallow"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+marshmallow = ">=2.0.0"
 
 [[package]]
 name = "mypy"
@@ -348,7 +360,7 @@ typing-extensions = ">=3.7.4"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "f512c510d7d57c4c503bd24a6c68e47ba11b8a215c32e7a1a59b4851fe1d6061"
+content-hash = "ed63dc9dbbcd117a4fbd2f6f3a18c1a783ceb9cb8b08f1a61707a01e4e3c4bfa"
 
 [metadata.files]
 appdirs = [
@@ -442,6 +454,10 @@ marshmallow = [
 marshmallow-dataclass = [
     {file = "marshmallow_dataclass-8.4.1-py3-none-any.whl", hash = "sha256:035f4aa9f516ca3c14c9ae3905fe8370b14cea6462ec1a9d4451209a6117976e"},
     {file = "marshmallow_dataclass-8.4.1.tar.gz", hash = "sha256:26b6ef76646c6cd71df3163c7106ddeaab27d9fac355cad41046627d5c15cda0"},
+]
+marshmallow-enum = [
+    {file = "marshmallow-enum-1.5.1.tar.gz", hash = "sha256:38e697e11f45a8e64b4a1e664000897c659b60aa57bfa18d44e226a9920b6e58"},
+    {file = "marshmallow_enum-1.5.1-py2.py3-none-any.whl", hash = "sha256:57161ab3dbfde4f57adeb12090f39592e992b9c86d206d02f6bd03ebec60f072"},
 ]
 mypy = [
     {file = "mypy-0.812-cp35-cp35m-macosx_10_9_x86_64.whl", hash = "sha256:a26f8ec704e5a7423c8824d425086705e381b4f1dfdef6e3a1edab7ba174ec49"},
